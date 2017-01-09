@@ -1,0 +1,163 @@
+/*Universal Styles*/
+
+body{
+    font-family: Montserrat, sans-serif;
+    font-size:1em;
+    margin:0 auto;
+    width:1224px;
+}
+
+h1{
+    font-size:2.5em;
+    color:#231F20;
+}
+
+/*Targetted Styles*/
+
+.banner{
+    background-image:url("floral-banner-1224.png");
+}
+
+.banner p{
+    background-color: #C5CC2E;
+    width:20%;
+    text-align: center;
+    color:white;
+    font-size:1.2em;
+    padding:0% 2%;
+    margin-top:1%;
+    margin-left:60%;
+    float:left;
+}
+
+.banner ul{
+    margin-top:1%;
+}
+
+.banner ul li{
+    display:inline;
+    margin-left:3%;
+}
+
+.banner ul li a{
+    text-decoration: none;
+    color:#231F20;
+    font-size:1.2em;
+}
+
+.logo{
+    margin-top:-2.3%;
+    margin-left:2%;
+}
+
+.search{
+    background-color: #E6E7E8;
+    height:35px;
+    margin-top:1.8%;
+    margin-left:0%;
+}
+
+.search p{
+    font-size:1.2em;
+    margin-top:3%;
+    margin-left:5%;
+    color:#231F20;
+}
+
+.search p i{
+    margin-right:5%;
+}
+
+.nav{
+    margin-right:0%;
+    margin-top:3%;
+}
+
+.nav ul li{
+    display:inline;
+    margin-left:5%;
+    font-size:1.2em;
+}
+
+.nav ul li a{
+    color:#231F20;
+    text-decoration: none;
+}
+
+.header{
+    margin-top:5%;
+    margin-bottom:10%;
+}
+
+.color-block{
+    background-color: #C5CC2E;
+    margin-bottom:10%;
+}
+
+.color-block h1{
+    padding-top:2%;
+    color:white;
+}
+
+.color-block p{
+    width:65%;
+    margin:0 auto;
+    margin-bottom:2%;
+    font-size:1.2em;
+    color:white;
+}
+
+.product-1{
+    background-image:url("todd-product-01.png");
+    height:203px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-2{
+    background-image:url("peach-product-01.png");
+    height:203px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-3{
+    background-image:url("blush-product-01.png");
+    height:203px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-4{
+    background-image:url("rose-product-01.png");
+    height:203px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.claims{
+    background-color: #231F20;
+    padding-top:.5%;
+    margin-bottom:10%;
+}
+
+.claims ul li{
+    display:inline;
+}
+
+.claims ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:2.5em;
+    margin-left:10%;
+}
+
+.social ul li{
+    display:inline;
+    font-size:3em;
+}
+
+ul li i{
+    margin-right:2%;
+    color:#C5CC2E;
+}
