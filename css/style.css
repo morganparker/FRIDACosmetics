@@ -45,6 +45,18 @@ h1{
     font-size:1.2em;
 }
 
+.banner-960{
+    display: none;
+}
+
+.search-960{
+    display:none;
+}
+
+.logo-960{
+    display: none;
+}
+
 .logo{
     margin-top:-2.3%;
     margin-left:2%;
@@ -112,6 +124,7 @@ h1{
     height:203px;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left:0%;
 }
 
 .product-2{
@@ -152,6 +165,49 @@ h1{
     margin-left:10%;
 }
 
+li.insta{
+    background-repeat: no-repeat;
+    height:203px;
+    width:203px;
+    float:left;
+    margin-left:1%;
+    list-style: none;
+}
+
+li.girl-1{
+    background-image: url(insta-1-01.png);
+}
+
+li.girl-2{
+    background-image: url(insta-2-01.png);
+}
+
+li.girl-3{
+    background-image: url(insta-3-01.png);
+}
+
+li.girl-4{
+    background-image: url(insta-4-01.png);
+}
+
+li.girl-5{
+    background-image: url(insta-5-01.png);
+}
+
+.girls a li{
+    color:white;
+    padding-top:12%;
+    padding-left:1%
+}
+
+ul a li.arrow{
+    width:30px;
+    color: #231F20 !important; 
+    padding-top:0% !important;
+    font-size:2.5em;
+    background-color:#C5CC2E;
+}
+
 .social ul li{
     display:inline;
     font-size:3em;
@@ -160,4 +216,31 @@ h1{
 ul li i{
     margin-right:2%;
     color:#C5CC2E;
+}
+
+.footer ul li{
+    display:inline;
+}
+
+.footer ul li a{
+    color: #231F20;
+    text-decoration: none;
+    margin-left:5%;
+    font-size:1.2em;
+}
+
+.footer-bar{
+    background-color: #231F20;
+    color:white;
+    padding-top:1%;
+}
+
+@media (max-width: 960px) {
+    .banner, .logo, .search, .nav{
+        display:none;
+    }
+    
+    .banner-960, .logo-960, .search-960{
+        display: inherit;
+    }
 }
