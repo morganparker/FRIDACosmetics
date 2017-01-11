@@ -243,4 +243,30 @@ ul li i{
     .banner-960, .logo-960, .search-960{
         display: inherit;
     }
+    
+    .banner-960 p{
+        width:300px;
+        background-color:#C5CC2E;
+        color:white;
+        padding-top:.2%;
+        padding-bottom:.2%;
+        font-size:1.2em;
+    }
+
+    .search-960 p{
+        background-color: #E6E7E8;
+        font-size:1.2em;
+        padding:.2% 2%;
+        margin-left:80%;
+        color:#231F20;
+    }
+
+    .search-960 p i{
+        margin-right:3%;
+    }
+    
+    .logo-960{
+        clear: both;
+    }
+    
 }
