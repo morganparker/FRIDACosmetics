@@ -1,10 +1,18 @@
 /*Universal Styles*/
 
+html, body{
+    height:100%;
+}
+
 body{
     font-family: Montserrat, sans-serif;
     font-size:1em;
     margin:0 auto;
-    width:1224px;
+    width:100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 h1{
@@ -16,6 +24,7 @@ h1{
 
 .banner{
     background-image:url("floral-banner-1224.png");
+    background-repeat: no-repeat;
 }
 
 .banner p{
@@ -57,16 +66,23 @@ h1{
     display: none;
 }
 
+.bottom-bar-960{
+    display:none;
+}
+.bottom-bar{
+    display:none;
+}
+
 .logo{
-    margin-top:-2.3%;
+    margin-top:-4.3%;
     margin-left:2%;
 }
 
 .search{
     background-color: #E6E7E8;
     height:35px;
-    margin-top:1.8%;
-    margin-left:0%;
+    margin-top:.8%;
+    margin-left:5%;
 }
 
 .search p{
@@ -81,13 +97,14 @@ h1{
 }
 
 .nav{
+    margin-left:0%;
     margin-right:0%;
-    margin-top:3%;
+    margin-top:2.5%;
 }
 
 .nav ul li{
     display:inline;
-    margin-left:5%;
+    margin-right:7%;
     font-size:1.2em;
 }
 
@@ -146,6 +163,28 @@ h1{
     height:203px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.shop-button{
+    height:20px;
+    background-color: #C5CC2E;
+    width:120px;
+    margin:0 auto;
+    margin-bottom:25%;
+}
+
+a .shop-button{
+    color:white;
+}
+
+a:hover .shop-button{
+    background-color: white;
+    color:#C5CC2E;
+}
+
+.shop-button p{
+    margin:10px 10px 10px 15px;
+    font-size:1.2em;
 }
 
 .claims{
@@ -278,5 +317,28 @@ ul li i{
         top:3.4%;
         padding-bottom:2%
     }
-    
+    .bottom-bar-960{
+        display:inherit;
+        z-index:99;
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+    .bottom-bar-960 .bottom-bar ul{
+        background-image:url(floral-banner-1224.png);
+        background-color: white;
+        height:60px;
+    }
+    .bottom-bar-960 .bottom-bar ul li{
+        display: inline;
+        margin-left:5%;
+        font-size:1.2em;
+    }
+    .bottom-bar-960 .bottom-bar ul li a{
+        color: #231F20;
+    }
+    .bottom-bar-960 .bottom-bar ul li.login-space{
+        margin-left:20%;
+    }
 }
