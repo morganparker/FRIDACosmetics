@@ -530,6 +530,37 @@ ul li i{
     margin:0 auto;
 }
 
+/*Targetted Styles on Cause Page*/
+.header-title3{
+    align-content: center;
+    margin-bottom:10%;
+}
+.cause-p{
+    font-size:1.3em;
+}
+
+.cause-p h2{
+    color:black;
+    padding-top:2%;
+}
+
+.cause-p-2{
+    font-size:1.3em;
+    margin-top:-2%;
+}
+
+.call-out p{
+    font-size:1.5em;
+}
+
+.call-out a{
+    color:#C5CC2E;
+}
+
+.call-out a:hover{
+    color:dimgrey;
+}
+
 @media (max-width: 960px) {
     html{
         width:960px;
@@ -598,5 +629,8 @@ ul li i{
     }
     .bottom-bar-960 ul li.login-space{
         margin-left:20%;
+    }
+    .footer-bar{
+        margin-bottom:60px;
     }
 }
