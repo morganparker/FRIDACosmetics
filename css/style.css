@@ -1,12 +1,13 @@
 /*Universal Styles*/
 
-html, body{
+html{
     height:100%;
     width:1124px;
     margin:0 auto;
 }
 
 body{
+    width:100%;
     font-family: Montserrat, sans-serif;
     font-size:1em;
 }
@@ -502,7 +503,8 @@ ul li i{
 
 .header-title2{
     align-content: center;
-    margin-top:20%
+    margin-top:20%;
+    margin-bottom:10%;
 }
 
 .prod-desc div{
@@ -514,13 +516,24 @@ ul li i{
     padding-bottom:2%;
 }
 
+.prod-desc{
+    margin-bottom:20%;
+}
+
 .prod-desc div h2{
     margin-left:3%;
     margin-bottom:1%;
     font-size:1.3em;
 }
 
+.second-row{
+    margin:0 auto;
+}
+
 @media (max-width: 960px) {
+    html{
+        width:960px;
+    }
     .banner, .logo, .search, .nav{
         display:none;
     }
@@ -540,7 +553,7 @@ ul li i{
         color:white;
         padding-top:.2%;
         padding-bottom:.2%;
-        font-size:1.2em
+        font-size:1.2em;
         top:0px;
         left:0px;
     }
@@ -564,27 +577,26 @@ ul li i{
         padding-bottom:2%
     }
     .bottom-bar-960{
-        display:inherit;
-        z-index:99;
-        position:absolute;
-        left:0;
-        right:0;
-        bottom:0;
-    }
-    .bottom-bar-960 .bottom-bar ul{
+        display:block;
+        position:fixed;
+        bottom:0px;
+        width:100%;
         background-image:url(floral-banner-1224.png);
-        background-color: white;
+        background-color:white;
         height:60px;
     }
-    .bottom-bar-960 .bottom-bar ul li{
+    .bottom-bar-960 ul{
+        margin-top:3%;
+    }
+    .bottom-bar-960 ul li{
         display: inline;
         margin-left:5%;
         font-size:1.2em;
     }
-    .bottom-bar-960 .bottom-bar ul li a{
+   .bottom-bar-960 ul li a{
         color: #231F20;
     }
-    .bottom-bar-960 .bottom-bar ul li.login-space{
+    .bottom-bar-960 ul li.login-space{
         margin-left:20%;
     }
 }
