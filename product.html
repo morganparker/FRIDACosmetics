@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/skeleton.css"> 
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/dropdown.js"></script>
+     <!--Dropit-->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+     <script src="js/dropit.js"></script>
+     <link rel="stylesheet" href="css/dropit.css" type="text/css" />
+     
  </head>
  
  <body>
@@ -45,7 +50,7 @@
 <!--bottom banner for 960px-->
     <div class="bottom-bar-960">
             <ul>
-                <li><a href="#">SHOP</a></li>
+                <li><a href="product-page.html">SHOP</a></li>
                 <li><a href="#">OUR BENEFITS</a></li>
                 <li><a href="cause.html">OUR CAUSE</a></li>
                 <li><a href="#">LOOKBOOK</a></li>
@@ -66,7 +71,7 @@
     
     <div class="six columns nav" align="right">
         <ul>
-            <li><a href="#">SHOP</a></li>
+            <li><a href="product-page.html">SHOP</a></li>
             <li><a href="#">OUR BENEFITS</a></li>
             <li><a href="cause.html">OUR CAUSE</a></li>
             <li><a href="#">LOOKBOOK</a></li>
@@ -81,46 +86,55 @@
         <h2>PEACH EYE BUTTER<br>0.23 FL OZ<br>$12</h2>
         <p>Our ingenious eyeshadow is loaded with creamy, pigmented color—for simply irresistible lids—on the double. This makeup bag must-have features a fresh burst of radiant color that blends beautifully to create a gorgeous glow. Just tap onto lids for a fast makeup fix anytime. </p>
         <h2>QUANTITY</h2>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">1</button>
-            <div id="myDropdown" class="dropdown-content">
+        
+        <ul id="quantity" class="dropit">
+            <li class="dropit-trigger dropit-open">
                 <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-            </div>
-        </div>
+                <ul class="dropit-submenu">
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+            </li>
+        </ul>
+        
         <h2>RATED 4.2/5</h2>
         <p>READ REVIEWS | WRITE A REVIEW</p>
         <a href="#"><div class="buy-button"><p>BUY NOW</p></div></a>
     </div>
     
-    <div class="dropdown-bar1 twelve columns">
-            <button onclick="myFunction1()" class="dropbtn-bar1">DETAILS AND BENEFITS</button>
-            <div id="myDropdown-bar1" class="dropdown-content-bar1">
-                <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</a>
-            </div>
-        </div>
+     <ul id="details" class="twelve columns dropit">
+            <li class="dropit-trigger dropit-open">
+                <a href="#">DETAILS AND BENEFITS</a>
+                <ul class="dropit-submenu">
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</a></li>
+                </ul>
+            </li>
+        </ul>
     
-    <div class="dropdown-bar2 twelve columns">
-            <button onclick="myFunction2()" class="dropbtn-bar2">INGREDIENTS</button>
-            <div id="myDropdown-bar2" class="dropdown-content-bar2">
-                 <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</a>
-            </div>
-        </div>
+    <ul id="details" class="twelve columns dropit">
+            <li class="dropit-trigger dropit-open">
+                <a href="#">INGREDIENTS</a>
+                <ul class="dropit-submenu">
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</a></li>
+                </ul>
+            </li>
+        </ul>
     
-    <div class="dropdown-bar3 twelve columns">
-            <button onclick="myFunction3()" class="dropbtn-bar3">REVIEWS</button>
-            <div id="myDropdown-bar3" class="dropdown-content-bar3">
-                <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</a>
-            </div>
-        </div>
+    <ul id="details" class="twelve columns dropit">
+            <li class="dropit-trigger dropit-open">
+                <a href="#">REVIEWS</a>
+                <ul class="dropit-submenu">
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</a></li>
+                </ul>
+            </li>
+        </ul>
     
     <h1 class="twelve columns recommend" align="center">RECOMMENDED PRODUCTS</h1>
     

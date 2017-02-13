@@ -530,6 +530,47 @@ ul li i{
     margin:0 auto;
 }
 
+/*drop down styles*/
+
+#quantity{
+    background-color: white;
+    width:15%;
+    text-align: center;
+    padding-top:1.5%;
+    padding-bottom:.1%;
+    font-size:1.2em;
+    margin-bottom:10%;
+    color:black;
+}
+
+#quantity li a{
+    color:black;
+}
+
+#details{
+    background-color: #C5CC2E;
+    font-size:1.5em;
+    text-align:center;
+    padding-top:1%;
+}
+
+#details li a{
+    color:white;
+}
+
+.dropit-submenu{
+    background-color: white;
+}
+
+.dropit-submenu li{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+.dropit-submenu li a{
+    color:black !important;
+}
+
 /*Targetted Styles on Cause Page*/
 .header-title3{
     align-content: center;
